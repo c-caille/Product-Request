@@ -5,9 +5,9 @@ const Orders = ( {orders, onDelete, onToggle}) => {
   
   return (
     <>
-      {orders.map((order) => (
+      {orders.map((order, index) => (
         <Order 
-          key={order.id} 
+          key={index} 
           order={order} 
           onDelete={onDelete} 
           onToggle={onToggle} 
